@@ -1,0 +1,12 @@
+<h1>Links.json</h1>
+<script>var xhr = new XMLHttpRequest();
+xhr.open("GET", "/app/links.json", false);
+xhr.send();
+document.write("<h2>Státusz</h2>");
+document.write(xhr.status);
+document.write("<h2>Státusz visszajelzés</h2>");
+document.write(xhr.statusText);
+
+document.write("<h2>GET kérés adatai</h2>");
+document.write(xhr.response);
+</script>

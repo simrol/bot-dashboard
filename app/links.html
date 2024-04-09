@@ -27,16 +27,17 @@
 </head>
 <body>
     <div id="json-container"></div>
+    <div id="count"></div>
 
     <script>
-  // Másolás akadályozása
+        // Másolás akadályozása
         document.addEventListener('copy', function(event) {
             event.preventDefault();
-            alert('A másolás tiltva van ezen az oldalon biztonsági okokból.');
+            alert('A másolás tiltva van ezen az oldalon!');
         });
-        
+
         document.addEventListener('DOMContentLoaded', function() {
-            const url = '/app/links.json';
+            const url = 'https://bot.dunkelmann.hu/app/links.json';
         
             fetch(url)
                 .then(response => {
@@ -47,6 +48,7 @@
                 })
                 .then(data => {
                     displayJSON(data);
+                    displayCount(data);
                 })
                 .catch(error => {
                     console.error('Hiba:', error);
@@ -58,6 +60,12 @@
             const preElement = document.createElement('pre');
             preElement.textContent = JSON.stringify(data, null, 2); // Formázott JSON megjelenítése
             container.appendChild(preElement);
+        }
+
+        function displayCount(data) {
+            const countContainer = document.getElementById('count');
+            const count = Object.keys(data).length;
+            countContainer.textContent = `Linkek: ${count}`;
         }
     </script>
 </body>

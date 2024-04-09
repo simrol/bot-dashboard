@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,9 +45,11 @@
 </head>
 <body>
     <div id="json-container"></div>
-    <div id="count"></div>
 
-    <script>
+<div class="footer">
+  <p><div id="count"></div></p>
+</div>
+<script>
         // Másolás akadályozása
         document.addEventListener('copy', function(event) {
             event.preventDefault();
@@ -65,8 +85,9 @@
         function displayCount(data) {
             const countContainer = document.getElementById('count');
             const count = Object.keys(data).length;
-            countContainer.textContent = `Linkek: ${count}`;
+            countContainer.textContent = `Globálisan tíltott linkek: ${count}  Jelentsd te is! <a href="/report">https://bot.dunkelmann.hu/report</a>`;
         }
     </script>
+
 </body>
-</html>
+</html> 

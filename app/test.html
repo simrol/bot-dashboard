@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Olvasó</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #json-container {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 80%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="json-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const url = 'https://bot.dunkelmann.hu/app/links.json';
+        
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Hiba történt a kérés során.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    displayJSON(data);
+                })
+                .catch(error => {
+                    console.error('Hiba:', error);
+                });
+        });
+
+        function displayJSON(data) {
+            const container = document.getElementById('json-container');
+            const preElement = document.createElement('pre');
+            preElement.textContent = JSON.stringify(data, null, 2); // Formázott JSON megjelenítése
+            container.appendChild(preElement);
+        }
+    </script>
+</body>
+</html>

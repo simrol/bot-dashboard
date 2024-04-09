@@ -29,6 +29,12 @@
     <div id="json-container"></div>
 
     <script>
+  // Másolás akadályozása
+        document.addEventListener('copy', function(event) {
+            event.preventDefault();
+            alert('A másolás tiltva van ezen az oldalon biztonsági okokból.');
+        });
+        
         document.addEventListener('DOMContentLoaded', function() {
             const url = '/app/links.json';
         

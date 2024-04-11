@@ -4,7 +4,7 @@
          <header><h1>Dunkelmann BOT</h1> <label for="menu" onclick id="menu-lbl"><img src="https://i.ibb.co/XpYhKhB/menu.png" alt=""></label></header>
          <div id="nav-links">
          <a class="nav-link" href="#intro">Bevezetés és szolgáltatási feltételek</a>
-         <a class="nav-link" href="#Introducing_a_simple_example">Introducing a simple example</a>
+         <a class="nav-link" href="#install">Egyszerű telepítés beállítás</a>
          <a class="nav-link" href="#Specifying_what_elements_to_lay_out_as_flexible_boxes">Specifying what elements to
             lay out as flexible boxes</a>
          <a class="nav-link" href="#The_flex_model">The flex model</a>
@@ -26,50 +26,28 @@
          <section class="main-section" id="intro">
             <header><h2>Bevezetés és szolgáltatási feltételek</h2></header>
             <p>
-               For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were
-               things like
-               floats and positioning. These are fine, and they work, but in some ways they are also rather limiting and
-               frustrating.
+              A termék mint discord bot feladata a szervereken,hogy ellássa a következő feladatokat:
+              <li>Kártékony linkek törlése (ami az adatbázisba található,tíltólistás)</li>
             </p>
-            <p>
-               The following simple layout requirements are either difficult or impossible to achieve with such tools,
-               in any kind of
-               convenient, flexible way:
-            </p>
-            <ul>
-               <li>Vertically centering a block of content inside its parent.</li>
-               <li>Making all the children of a container take up an equal amount of the available width/height,
-                  regardless of how much
-                  width/height is available.</li>
-               <li>Making all columns in a multiple-column layout adopt the same height even if they contain a different
-                  amount of content.</li>
-            </ul>
-            <p>As you'll see in subsequent sections, flexbox makes a lot of layout tasks much easier. Let's dig in!</p>
+            <b>
+               A discord botnak engedélyeztetni kell a rendszergazda jogot,a stabíl és megfelelő működés érdekében. A készítők nem vállalnak felelősséget,ha a bot helytelenűl van telepítve a discord szerveren! (pl:engedélyek nélkül). 
+            </b>
+            <h1>Továbbiakban ami még fontos:</h1>
+            <p>A felhasználók küldhetnek a bot üzemeltetői számára kártékony linkeket a bejelentés hivatkozáson:<a href="/report">https://bot.dunkelmann.hu/report</a></p>
             <div class="note">
-               <p><strong>Prerequisites:</strong> HTML basics (study <a
-                     href="/en-US/docs/Learn/HTML/Introduction_to_HTML">Introduction to HTML</a>), and an idea of how
-                  CSS works (study <a href="/en-US/docs/Learn/CSS/Introduction_to_CSS">Introduction to CSS</a>.)</p>
+               <p><strong>Figyelmeztetés:</strong> A bot kellőképen le van egyszerűsítve,így nincs HELP parancs. Egy parancs van:!?bejelent</p>
             </div>
          </section>
-         <section class="main-section" id="Introducing_a_simple_example">
-            <header><h2>Introducing a simple example</h2></header>
-            <p>In this article we are going to get you to work through a series of exercises to help you understand how
-               flexbox works.
-               To get started, you should make a local copy of the first starter file — <a
-                  href="https://github.com/mdn/learning-area/blob/master/css/css-layout/flexbox/flexbox0.html">flexbox0.html</a>
-               from our github repo — load it in
-               a modern browser (like Firefox or Chrome), and have a look at the code in your code editor. You can also
-               <a href="http://mdn.github.io/learning-area/css/css-layout/flexbox/flexbox0.html">see it live
-                  here</a>.</p>
-            <p>You'll see that we have a <a href="/en-US/docs/Web/HTML/Element/header"
-                  title="The HTML <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements."><code>&lt;header&gt;</code></a>
-               element with a top level heading inside it, and a <a href="/en-US/docs/Web/HTML/Element/section"
-                  title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."><code>&lt;section&gt;</code></a>
-               element containing three
-               <a href="/en-US/docs/Web/HTML/Element/article"
-                  title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication)."><code>&lt;article&gt;</code></a>s.
-               We are going to use these to create a fairly standard three column layout.</p>
-            <img src="https://mdn.mozillademos.org/files/13406/flexbox-example1.png" alt="">
+         <section class="main-section" id="install">
+            <header><h2>Egyszerű telepítés és beállítás</h2></header>
+            <p>A bot telepítéséhez és beállításához nem szükséges diploma.</p><br>
+            <p>Sokan már félnek és kattognak azon,hogy a telepítés és a beállítás mennyire nehéz és időigényes. Itt nem kell félni,és feleslgesen rágódni,egyszerű weboldalunknak köszönhetően a navigálás egyszerű és pár klikk és kész.</p>
+            <p>Nos nézzük a lépéseket szép sorrendbe:</p><br>
+            <li>Elsőnek menj a <a href="/app">https://bot.dunkelmann.hu/app</a> linkre,ahol látsz egy gombot.</li>
+            <img src="https://bot.dunkelmann.hu/static/starting.png">
+            <br>
+            <li>Nyomj egy erőset a gombra,majd az oldal átirányít a discord auth (azonosító) oldalra.</li>
+            
          </section>
          <section class="main-section" id="Specifying_what_elements_to_lay_out_as_flexible_boxes">
             <header><h2>Specifying what elements to lay out as flexible boxes</h2></header>

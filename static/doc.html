@@ -6,8 +6,7 @@
          <div id="nav-links">
          <a class="nav-link" href="#intro">Bevezetés és szolgáltatási feltételek</a>
          <a class="nav-link" href="#install">Egyszerű telepítés és beállítás</a>
-         <a class="nav-link" href="#Specifying_what_elements_to_lay_out_as_flexible_boxes">Specifying what elements to
-            lay out as flexible boxes</a>
+         <a class="nav-link" href="#whatisglink">Bevezetés a GLINK rendszer rejtelmeibe</a>
          <a class="nav-link" href="#The_flex_model">The flex model</a>
          <a class="nav-link" href="#Columns_or_rows?">Columns or rows?</a>
          <a class="nav-link" href="#Wrapping">Wrapping</a>
@@ -48,49 +47,21 @@
             <img src="https://bot.dunkelmann.hu/static/starting.png">
             <br>
             <li>Nyomj egy erőset a gombra,majd az oldal átirányít a discord auth (azonosító) oldalra.</li>
+            <img src="https://bot.dunkelmann.hu/static/starting2.png"><br>
+            <li>Itt láthatod,hogy milyen engedélyeket kell megadni a botnak,hogy fusson.</li>
+            <li>Rányomva a legördülő menüre,kiválasztod a szervered,ahova szeretnéd hogy a bot megérkezzen.</li>
+            <img src="https://bot.dunkelmann.hu/static/starting3.png"><br>
+            <li>Következőleg add meg a szükséges jogosúltságot: <code>RENDSZERGAZDA</code>,majd nyomj az <code>ENGEDÉLYEZÉS</code> gombra.</li>
+            <li>Ha látod a botot a szervereden:</li>
+            <img src="https://bot.dunkelmann.hu/static/onlinebot.png"><br>
+            <h4>Akkor nincs más teendőd mint semmit tenni. Ugyanis a bot készenáll arra,hogy moderélja a káros linkeket.</h4><br>
+            <img src="https://bot.dunkelmann.hu/static/successadd.png">
             
          </section>
-         <section class="main-section" id="Specifying_what_elements_to_lay_out_as_flexible_boxes">
-            <header><h2>Specifying what elements to lay out as flexible boxes</h2></header>
-            <p>To start with, we need to select which elements are to be laid out as flexible boxes. To do this, we set
-               a special value
-               of <a href="/en-US/docs/Web/CSS/display"
-                  title="The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout,&nbsp;grid or flex."><code>display</code></a>
-               on the parent element of the elements you want to affect. In this case we want to lay out the <a
-                  href="/en-US/docs/Web/HTML/Element/article"
-                  title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication)."><code>&lt;article&gt;</code></a>
-               elements, so we set this on the <a href="/en-US/docs/Web/HTML/Element/section"
-                  title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."><code>&lt;section&gt;</code></a>:
-            </p>
-            <div class="code-snip">
-            <span class="selector">section</span><span class="token"> {</span>
-            <span class="property">display</span><span class="token">: </span>flex<span class="token">;</span>
-            <span class="token">}</span>
-            </div>
-            <p>This causes the &lt;section&gt; element to become a <strong>flex container</strong>, and its children to
-               become
-               <strong>flex items</strong>. The result of this should be something like so:</p>
-            <p>So, this single declaration gives us everything we need — incredible, right? We have our multiple column
-               layout with
-               equal-sized columns, and the columns are all the same height. This is because the default values given to
-               flex items
-               (the children of the flex container) are set up to solve common problems such as this.</p>
-            <img src="https://mdn.mozillademos.org/files/13408/flexbox-example2.png" alt="">
-            <p>So, this single declaration gives us everything we need — incredible, right? We have our multiple column
-               layout with
-               equal-sized columns, and the columns are all the same height. This is because the default values given to
-               flex items
-               (the children of the flex container) are set up to solve common problems such as this.</p>
-            <p>To be clear, let's reiterate what is happening here. The element we've given a &nbsp; <a
-                  href="/en-US/docs/Web/CSS/display"
-                  title="The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout,&nbsp;grid or flex."><code>display</code></a>
-               value of <code>flex</code> to is acting like a block-level element in terms of how it interacts with the
-               rest of the
-               page, but its children are being laid out as flex items. The next section will explain in more detail
-               what this
-               means. Note also that you can use a <code>display</code> value of <code>inline-flex</code> if you wish to
-               lay out an
-               element's children as flex items, but have that element behave like an inline element.</p>
+         <section class="main-section" id="whatisglink">
+            <header><h2>Bevezetés a GLINK rendszer rejtelmeibe</h2></header>
+            <h4>Na de mindenkinek előjön a kérdés,hogy mi az a GLINK?</h4>
+            <p>A GLINK azaz  <code>GLOBÁLIS LINK</code>  globálisan képes a bot letiltani egy link adott használatát.</p>
          </section>
          <section class="main-section" id="The_flex_model">
             <header><h2>The flex model</h2></header>

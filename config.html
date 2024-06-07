@@ -176,3 +176,36 @@
 .pricing-button.is-featured:active {
   background-color: #269aff;
 }</style>
+  <script>
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function checkAlert() {
+            const alertSeen = getCookie("alertSeen");
+            if (!alertSeen) {
+                alert("Figyelmed felhívjuk,hogy amennyiben telepítetted a botot 2024-06-07 előtt,akkor kérnénk,hogy cseréld le a botot,és hívd meg még 1x! A bot továbbra is online,de ahhoz hogy működjön rugd ki az előzőt,és hívd meg az újat. A behívásról dokumentációt itt találsz:https://bot.dunkelmann.hu/static/doc#install");
+                setCookie("alertSeen", "true", 365);
+            }
+        }
+
+        window.onload = function() {
+            checkAlert();
+        };
+    </script>
+
+

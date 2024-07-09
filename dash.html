@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Kezelőfelület</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-right">
+                <img src="bot-image.jpg" alt="Bot Kép" class="avatar">
+                <span class="bot-name">Bot Neve</span>
+                <div class="dropdown">
+                    <button class="dropbtn">Menü</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="settings">Beállítások</a>
+                        <a href="#" class="logout">Kijelentkezés</a>
+                        <a href="#" class="subscription">
+                            Előfizetés <span class="crown">👑</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="server-selector">
+        <h2>Szerverválasztó</h2>
+        <div class="server-list">
+            <div class="server-item">
+                <img src="server-image.jpg" alt="Szerver Kép" class="server-avatar">
+                <span class="server-name">Szerver 1</span>
+                <div class="server-buttons">
+                    <button class="server-button">Beállítások</button>
+                    <button class="server-button">Meghívás</button>
+                </div>
+            </div>
+            <div class="server-item">
+                <img src="server-image.jpg" alt="Szerver Kép" class="server-avatar">
+                <span class="server-name">Szerver 2</span>
+                <div class="server-buttons">
+                    <button class="server-button">Beállítások</button>
+                    <button class="server-button">Meghívás</button>
+                </div>
+            </div>
+            <div class="server-item">
+                <img src="server-image.jpg" alt="Szerver Kép" class="server-avatar">
+                <span class="server-name">Szerver 3</span>
+                <div class="server-buttons">
+                    <button class="server-button">Beállítások</button>
+                    <button class="server-button">Meghívás</button>
+                </div>
+            </div>
+            <!-- További szerver elemek -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+<style>body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.bot-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3a3a3a;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #2c2c2c;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3a3a3a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.settings {
+    background-color: #7289da;
+}
+
+.logout {
+    background-color: #f04747;
+}
+
+.subscription {
+    background-color: #f9a602;
+}
+
+.crown {
+    margin-left: 5px;
+}
+
+.server-selector {
+    padding: 20px;
+}
+
+h2 {
+    color: #f5f5f5;
+}
+
+.server-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.server-item {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.server-item:hover {
+    background-color: #4a4a4a;
+    transform: translateY(-5px);
+}
+
+.server-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.server-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.server-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.server-button {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.server-button:hover {
+    background-color: #4a4a4a;
+}
+
+   
+
+</style>

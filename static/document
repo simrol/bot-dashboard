@@ -1,0 +1,442 @@
+<link rel="icon" type="image/x-icon" href="/static/logo.png
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+ <nav id="navbar">
+
+<title>Dunkelmann BOT - Documentation</title>
+
+ <div id="nav-links">
+ <a class="nav-link" href="#intro">Introduction and Terms of Service</a>
+ <a class="nav-link" href="#policy">Data Management</a>
+ <a class="nav-link" href="#install">Easy installation and setup</a>
+ <a class="nav-link" href="#whatisglink">Introduction to the mysteries of the GLINK system</a>
+ <a class="nav-link" href="#mittilt">What have we booked?</a>
+ <a class="nav-link" href="#whatisvirustotal">What is Virustotal?(Automatic scan)</a>
+ <a class="nav-link" href="#dmuse">What is DM?</a>
+ <a class="nav-link" href="/">Back to main page</a>
+
+
+ </div>
+ </nav>
+ <main id="main-doc">
+ <section class="main-section" id="intro">
+ <header><h2>Introduction and Terms of Service</h2></header>
+ <p>
+ The task of the product as a discord bot on the servers is to perform the following tasks:
+ <li>Delete harmful links (which are in the database, blocked list)</li>
+ </p>
+ <b>
+ The discord bot must be granted administrator rights for stable and proper operation. The creators are not responsible if the bot is incorrectly installed on the discord server! (e.g. without permits).
+ </b>
+ <h1>Furthermore, what is important:</h1>
+ <p>Users can send harmful links to bot operators via the report link:<a href="/report">https://bot.dunkelmann.hu/report</a></p>
+ <div class="note">
+ <p><strong>Warning:</strong> The bot is sufficiently simplified, so there is no HELP command. There is one command:!?announce</p>
+ </div>
+ </section>
+ <section class="main-section" id="policy">
+ <header><h2>Data management</h2></header>
+ <p>
+ The handling of the product as discord bot data is defined here:
+ <p>We use the ID of users who:</p><br>
+ <li>They are on the global blacklist</li>
+ <li>Those who use the <code>!?blockdm</code> command will automatically be added to the <a href="https://tokyohost.eu">tokyohost</a> server, where they will remain until entering a command: <code>!?unblockdm</code> is requested by the user </li><br>
+
+
+
+
+
+ </section>
+ <section class="main-section" id="install">
+ <header><h2>Easy installation and setup</h2></header>
+ <p>A degree is not required to install and set up the bot.</p><br>
+ <p>Many people are already afraid and complain about how difficult and time-consuming installation and setup are. There is no need to be afraid or worry unnecessarily, thanks to our simple website, navigation is easy and a few clicks and you are done.</p>
+ <p>Well, let's look at the steps in order:</p><br>
+ <li>First go to the <a href="/app">https://bot.dunkelmann.hu/invite</a> link, where you will see a confirmation page.</li>
+
+ <br>
+ <li>Press the button hard, and the page will redirect you to the discord auth (identification) page.</li>
+ <img src="https://bot.dunkelmann.hu/static/starting2.png"><br>
+ <li>Here you can see what permissions must be granted to the bot to run.</li>
+ <li>By clicking on the drop-down menu, you select your server, where you want the bot to arrive.</li>
+ <img src="https://bot.dunkelmann.hu/static/starting3.png"><br>
+ <li>Next, enter the necessary permissions: <code>ADMINISTRATOR</code>, then press the <code>AUTHORIZE</code> button.</li>
+ <li>If you see the bot on your server:</li>
+ <img src="https://bot.dunkelmann.hu/static/onlinebot.png"><br>
+ <h4>Then you have nothing to do but do nothing. Because the bot is ready to moderate harmful links.</h4><br>
+ <img src="https://bot.dunkelmann.hu/static/successadd.png">
+
+ </section>
+ <section class="main-section" id="whatisglink">
+ <header><h2>Introduction to the mysteries of the GLINK system</h2></header>
+ <h4>Well, everyone has the question, what is GLINK?</h4>
+ <p>GLINK i.e. <code>GLOBAL LINK</code> can globally block the use of a specific link. At the same time, the bot can withstand continuous spamming, as the server where we operate it, <a href="https://tokyohost.eu">(tokyohost)</a>, is scaled for this.</p><br>
+ <p>The bot contains a <a href="/app/links">Global Blocklist</a>, which is openly available.</p>
+ </section>
+ <section class="main-section" id="mittilt">
+ <header><h2>What are we blocking?</h2></header>
+ <p>We block links that violate Discord rules and protect the community.</p>
+ <li>Scam links</li>
+ <li>Scams</li>
+ <li>Jumpscare videos, websites</li>
+ <li>Token stealing links</li>
+ <li>Continuous redirecting websites</li>
+ <li>Discord servers that violate the Discord server policy</li>
+ <li>In addition, links that can be submitted here.</li>
+ <h3>We reserve the right to expand the list and can change the transfer rules at any time. By using the discord bot, you agree to the terms set by the developer.</h3>
+ <ul>
+
+ </section>
+ <section class="main-section" id="whatisvirustotal">
+ <header><h2>What is virustotal?(Automatic scan)</h2></header>
+ <p>
+ VirusTotal is a feature that automatically scans links and files shared on servers for viruses and malware in the VirusTotal database. This helps protect servers from potential security threats and attacks.</p>
+ <br>
+ <p>But what are its functions?</p> <br>
+ <li><b>Automatic Virus Scan:</b> VirusTotal automatically scans links and files shared on our servers for viruses or malware.</li><br>
+ <li><b>Warning About Viral Content:</b> If VirusTotal virus scanning detects viral or malicious content, the bot will alert users and prevent further sharing of the content.</li><br>
+ <li><b>Enable and Disable (coming soon):</b> Server owners can enable or disable VirusTotal virus scanning on that server.</li><br>
+ <b>Why is it Important?</b>
+ <p>VirusTotal helps protect Discord servers and users from security threats posed by viruses and malware, increasing server security and protecting users from online attacks.</p>
+
+
+ </section>
+ <section class="main-section" id="dmuse">
+ <header><h2>What is DM? (Send and receive a private message)</h2></header>
+ <p>This Discord bot has many useful features, including sending DM messages, blocking and enabling receiving DMs.</p>
+ <li><b>Usage:</b> !?dm @user message</li><br>
+ <li><b>Description:</b> Allows you to send a private message (DM) to a marked user.</li><br>
+ <li><b>Operation:</b> The bot sends a private message to the specified user with the content of the message, provided that the user has not blocked receiving DMs.</li><br>
+ <li><b>Note:</b> If the specified user has blocked receiving DMs, the bot will notify the person who issued the command.</li><br>
+ <br>
+ <br>
+ <h3><b>Disable DM</b></h3><br>
+ <li><b>Usage:</b> !?blockdm</li><br>
+ <li><b>Description:</b> Allows the user to disable receiving DMs.</li><br>
+ <li><b>Working:</b> Adds the user's ID to a file on the server hosted by <a href="https://tokyohost.eu">tokyohost</a>, so that in the future the bot will not you can send a private message to the user.</li><br>
+
+ <br>
+ <br>
+
+ <h3>Unblock DM</h3><br>
+ <li><b>Usage:</b>!?unblockdm</li><br>
+ <li><b>Description:</b>Allows the user to re-enable receiving DMs.</li><br>
+ <li><b>Operation:</b>Deletes the user's ID from the file on the server operated by <a href="https://tokyohost.eu">tokyohost</a>, so that in the future the bot can send private message to the user.</li><br>
+
+ </section>
+
+ <section class="main-section" id="Reference">
+ <header><h2>Creators of this bot:</h2></header>
+ <p><a href="https://dunkelmann.hu">Dunkelmann</a></p>
+ <p>Documentation updated: 2024.06.11</p>
+ </section>
+ <footer>Responsible for documentation: <a href="https://dunkelmann.hu/dc" target="_blank" rel="noopener noreferrer">Dunkelmann BOT 2021-2024</a></footer>
+ </main>
+ </div>
+ </script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141616;
+    font-size: 1.6rem;
+    color: #fafafa;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+@media(max-width:700px) {
+    .container {
+        flex-flow: column wrap;
+    }
+}
+#navbar {
+    background-color: #212129;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 2rem 1rem;
+    padding-bottom: 5rem;
+    border-radius: 0.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex: 1;
+    height: 68rem;
+    min-width: min-content;
+    transition: all 0.2s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#navbar::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+#navbar::-webkit-scrollbar-track {
+    background: #1e1e26;
+}
+
+#navbar::-webkit-scrollbar-thumb {
+    background: #393942;
+    border-radius: 0.4rem;
+}
+
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: #5a3d5c;
+}
+
+@media(max-width:700px) {
+    #navbar {
+        height: max-content;
+        overflow-y: hidden;
+        position: static;
+        padding: 0 2rem;
+    }
+}
+
+#navbar header {
+    font-size: 4rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    color: #fafafa;
+}
+@media(max-width:700px){
+  #navbar header{
+    padding: 2rem 0;
+  }
+}
+#navbar h1{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 0;
+    display: inline-block;
+}
+#menu-lbl {
+    display: none;
+    font-size: 2.5rem;
+    font-weight: 400;
+    float: right;
+    width: 3rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    box-sizing: content-box;
+    margin-top: 0.5rem;
+    border-radius: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-lbl img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#menu-lbl:hover {
+    box-shadow: 0 0 5px #f638dc;
+}
+
+#menu-lbl:active {
+    background-color: #5a3d5c;
+    color: #1e1e26;
+}
+
+@media(max-width:700px) {
+    #menu-lbl {
+        display: block;
+    }
+}
+.nav-link {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    padding: 1rem;
+    transition: border-width 0.2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    color: #bbe1fa;
+}
+.nav-link:hover {
+    background-color: #131418;
+    border-left: 0.4rem solid #3874f6;
+    border-radius: 0.4rem;
+    color: #fafafa;
+    padding-left: 0.6rem;
+}
+
+@media(max-width:700px) {
+    #nav-links {
+        display: none;
+    }
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked~#nav-links {
+    display: block;
+}
+#main-doc {
+    flex: 3;
+    padding: 1rem 2rem;
+}
+@media(max-width:700px){
+  #main-doc{
+    padding: 0;
+  }
+}
+.main-section {
+    border: 0.2rem solid #2f5869;
+    border-style: solid none;
+    padding: 4rem 3rem;
+    line-height: 1.3;
+}
+@media(max-width:700px){
+  .main-section{
+    padding: 4rem 2rem;
+  }
+}
+.main-section h2 {
+    font-size: 3.5rem;
+    color: #fafafa;
+    font-weight: 400;
+}
+
+.main-section>p,
+.main-section>ul,
+.main-section>img,
+.note {
+    font-size: 1.8rem;
+    max-width: 65rem;
+    width: auto;
+}
+
+@media(max-width:960px) {
+
+    .main-section>p,
+    .main-section>ul,
+    .main-section>img,
+    .main-section>pre,
+    .note {
+        max-width: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+.main-section li {
+    padding: 0.5rem 0;
+}
+
+.main-section a,
+.main-section code {
+    text-decoration: none;
+    color: #bbe1fa;
+}
+
+.main-section a:hover {
+    text-decoration: underline;
+}
+
+.main-section code {
+    background-color: #5a3d5c;
+}
+
+.code-snip {
+    background-color: #393846;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.4rem;
+    border-left: 0.4rem solid #f638dc;
+    line-height: 1.5;
+    white-space: pre-line;
+    width: auto;
+    max-width: 65rem;
+    margin: 2rem 0;
+    padding: 0 3rem 2rem 3rem;
+}
+@media(max-width:700px){
+  .code-snip{
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+.token {
+    color: #7bb9e2;
+}
+
+.selector {
+    color: rgb(215, 157, 75);
+}
+
+.property {
+    color: rgb(156, 220, 240);
+    padding-left: 3rem;
+}
+@media(max-width:700px){
+  .property {
+    padding-left: 1rem;
+  }
+}
+
+.note {
+    background-color: #3d2c00;
+    border-radius: 0.4rem;
+    border-left: 0.4rem solid #f7b73c;
+    padding: 0.5rem 3rem;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #5a3d5c;
+}
+footer a{
+    color: #7bb9e2;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #f638dc;
+}
+</style>
+
+  <script>
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function checkAlert() {
+            const alertSeen = getCookie("alertSeen");
+            if (!alertSeen) {
+                alert("Please note that if you installed the stick before 2024-06-07, we would ask you to replace the stick and call us 1 more time! The bot is still online, but in order for it to work, kick the previous one and invite the new one. You can find documentation about the call-in here: https://bot.dunkelmann.hu/static/doc#install");
+                setCookie("alertSeen", "true", 365);
+            }
+        }
+
+        window.onload = function() {
+            checkAlert();
+        };
+    </script>

@@ -440,29 +440,4 @@ footer a:hover{
             checkAlert();
         };
     </script>
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Detect the browser's language
-            const userLang = navigator.language || navigator.userLanguage;
 
-            // Define the URLs for different languages
-            const urls = {
-                'hu': 'https://bot.dunkelmann.hu/static/doc', // Hungarian
-                'en': 'https://bot.dunkelmann.hu/static/document', // English
-                'es': '/', // Spanish
-                // Add more languages and URLs as needed
-            };
-
-            // Extract the primary language code (e.g., 'en' from 'en-US')
-            const langCode = userLang.split('-')[0];
-
-            // Check if we have a URL for the detected language
-            if (urls[langCode]) {
-                // Redirect to the corresponding URL
-                window.location.href = urls[langCode];
-            } else {
-                // Redirect to the default URL (English)
-                window.location.href = urls['en'];
-            }
-        });
-    </script>
